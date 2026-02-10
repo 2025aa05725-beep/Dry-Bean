@@ -1,3 +1,4 @@
+
 import joblib
 import numpy as np
 import pandas as pd
@@ -5,19 +6,25 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 from pathlib import Path
-from utils.metrics import compute_metrics, get_confusion_and_report
+
+# Try both import locations
+try:
+    from utils.metrics import compute_metrics, get_confusion_and_report
+except ModuleNotFoundError:
+    from metrics import compute_metrics, get_confusion_and_report
 
 st.set_page_config(page_title="Dry Bean Classifier — ML Assignment 2", layout="wide")
 st.title("Dry Bean Classification — ML Assignment 2")
 st.caption("Upload a test CSV. If it contains 'Class', the app will compute metrics.")
 
+
 available_models = {
-    "Logistic Regression": "model/Logistic_Regression.joblib",
-    "Decision Tree": "model/Decision_Tree.joblib",
-    "kNN": "model/kNN.joblib",
-    "Naive Bayes (Gaussian)": "model/Naive_Bayes_Gaussian.joblib",
-    "Random Forest": "model/Random_Forest.joblib",
-    "XGBoost": "model/XGBoost.joblib",
+    "Logistic Regression": "Logistic_Regression.joblib",
+    "Decision Tree": "Decision_Tree.joblib",
+    "kNN": "kNN.joblib",
+    "Naive Bayes (Gaussian)": "Naive_Bayes_Gaussian.joblib",
+    "Random Forest": "Random_Forest.joblib",
+    "XGBoost": "XGBoost.joblib",
 }
 
 model_name = st.sidebar.selectbox("Choose a model", list(available_models.keys()))
@@ -36,9 +43,9 @@ def plot_cm(cm, labels, title):
     ax.set_title(title); ax.set_xlabel("Predicted"); ax.set_ylabel("Actual")
     st.pyplot(fig)
 
-summary_path = Path("artifacts/metrics_summary.csv")
+summary_path = Path("metrics_summary.csv")  # instead of artifacts/metrics_summary.csv
 if summary_path.exists():
-    with st.expander("📊 Training Comparison Table"):
+    with st.expander(" Training Comparison Table"):
         st.dataframe(pd.read_csv(summary_path), use_container_width=True)
 
 st.markdown("### Inference & Evaluation")
