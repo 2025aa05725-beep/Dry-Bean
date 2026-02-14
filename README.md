@@ -33,14 +33,20 @@ Below is the **comparison table** for all six models.
 
 ### Comparison Table
 
-| ML Model Name             | Accuracy | AUC (macro OvR) | Precision (macro) | Recall (macro) | F1 (macro) | MCC   |
-|---------------------------|:--------:|:---------------:|:-----------------:|:--------------:|:----------:|:-----:|
-| Logistic Regression       |          |                 |                   |                |            |       |
-| Decision Tree             |          |                 |                   |                |            |       |
-| kNN                       |          |                 |                   |                |            |       |
-| Naive Bayes (Gaussian)    |          |                 |                   |                |            |       |
-| Random Forest (Ensemble)  |          |                 |                   |                |            |       |
-| XGBoost (Ensemble)        |          |                 |                   |                |            |       |
+
+### **Comparison Table with 6 Models**
+
+| ML Model Name              | Accuracy       | AUC (macro OvR)     | Precision (macro)     | Recall (macro)       | F1 (macro)           | MCC             |
+|----------------------------|----------------|----------------------|------------------------|-----------------------|-----------------------|------------------|
+| **Logistic Regression**    | 0.9214102093   | 0.5000000000         | 0.9353831529           | 0.9321485699          | 0.9335383156          | 0.9050454595     |
+| **Decision Tree**          | 0.8920308483   | 0.9449962768         | 0.9075129411           | 0.9090279017          | 0.9080614185          | 0.8695693170     |
+| **kNN**                    | 0.9188395152   | 0.5000000000         | 0.9352307989           | 0.9305852067          | 0.9325226541          | 0.9019130225     |
+| **Naive Bayes (Gaussian)** | 0.7638633860   | 0.9671931926         | 0.7744268089           | 0.7694169317          | 0.7677499872          | 0.7154063218     |
+| **Random Forest**          | 0.9210429673   | 0.9934028723         | 0.9353386871           | 0.9315431113          | 0.9333220626          | 0.9044987114     |
+| **XGBoost (Ensemble)**     | 0.9221446934   | 0.9950034775         | 0.9365872356           | 0.9323648368          | 0.9343929996          | 0.9058117279     |
+
+---
+
 
 > **Where to find the values:**  
 > - In GitHub: **`metrics_summary.csv`** (present at the repo root). [1](https://github.com/2025aa05725-beep/Dry-Bean)  
