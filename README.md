@@ -50,8 +50,6 @@ Below is the **comparison table** for all six models.
 
 ### Observations
 
-> Add 1–2 short lines per model capturing what you see in the metrics (strengths, weaknesses, any class confusions). Below is a high‑quality draft you can keep or adapt.
-
 | ML Model Name             | Observation about model performance |
 |---------------------------|-------------------------------------|
 | Logistic Regression       | Strong baseline after scaling; macro‑F1 competitive, suggesting decent linear separability of morphology features. |
