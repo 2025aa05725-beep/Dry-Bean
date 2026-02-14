@@ -11,7 +11,7 @@ Build and compare multiple machine‑learning classifiers to predict the **dry b
 
 ---
 
-## b) Dataset description  [1 mark]
+## b) Dataset description
 
 - **Name:** Dry Bean Dataset (UCI Machine Learning Repository)  
 - **Instances:** 13,611  
@@ -24,7 +24,7 @@ Build and compare multiple machine‑learning classifiers to predict the **dry b
 
 ---
 
-## c) Models used  [6 marks — 1 mark for all the metrics per model]
+## c) Models used
 
 Below is the **comparison table** for all six models.  
 **Action:** Open your repo file **`metrics_summary.csv`** and paste the values row‑by‑row into this table. (File path in repo root.) [1](https://github.com/2025aa05725-beep/Dry-Bean)
@@ -48,7 +48,7 @@ Below is the **comparison table** for all six models.
 
 ---
 
-### Observations (per model)  [3 marks]
+### Observations (per model)
 
 > Add 1–2 short lines per model capturing what you see in the metrics (strengths, weaknesses, any class confusions). Below is a high‑quality draft you can keep or adapt.
 
