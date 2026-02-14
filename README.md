@@ -48,7 +48,7 @@ Below is the **comparison table** for all six models.
 
 ---
 
-### Observations (per model)
+### Observations
 
 > Add 1–2 short lines per model capturing what you see in the metrics (strengths, weaknesses, any class confusions). Below is a high‑quality draft you can keep or adapt.
 
